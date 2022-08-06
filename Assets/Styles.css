@@ -1,0 +1,38 @@
+:root {
+
+}
+
+*{
+    font-family: helvetica, arial, sans-serif;
+    
+}
+
+body {
+    background-color: rgba(70, 61, 58, 0.918);
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    background-color: rgba(126, 60, 13, 0.836);
+    text-align: center;
+    width: 96%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+div ul {
+    text-decoration: none;
+    display: none;
+}
+
+input:hover {
+    height: 215px;
+    width: 215px;
+}
