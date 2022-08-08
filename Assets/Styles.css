@@ -54,6 +54,7 @@ aside{
     display: flex;
     flex-direction: column;
     float: left;
+    font-size: larger;
     color:#fff;
     background-image: url(./images/Wood.jpg);
     border-right: solid rgba(0, 0, 0, 0.726);
@@ -64,7 +65,7 @@ aside{
 
 section img{
     justify-content: end;
-    padding-top: 30px;
+    padding-top: 18px;
     padding-left: 100px;
    
 }
@@ -82,4 +83,19 @@ section p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.justifyCenter{
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.spaceBetween{
+    justify-content: space-evenly;
+    padding-top: 25px;
 }
