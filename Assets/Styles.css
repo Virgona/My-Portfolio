@@ -79,23 +79,58 @@ section p {
     text-align: center;
 }
 
+
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .column{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     flex-direction: column;
+    place-content: center;
+    height:800px;
+    width:auto;
+    gap: 5px;
 }
 .justifyCenter{
-    justify-content: center;
+    padding-left: 325px;
     padding-top: 25px;
 }
 
-.spaceBetween{
-    justify-content: space-evenly;
-    padding-top: 25px;
+.imageProjectBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height:800px;
+    margin:auto;
+    border: solid black 3px;
+}
+
+.imageProject1{
+    width:800;
+    height:500;
+    transition:0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Village.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imageProject1 p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.imageProject1:hover{
+    box-shadow: 0 0 0 500px rgb(0, 0, 0,0.9) inset;
 }
