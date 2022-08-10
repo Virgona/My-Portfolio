@@ -1,3 +1,4 @@
+/* added all my reoccuring colors here. Tried to add the background image of the wood but it wouldnt work */
 :root {
     --backgroundText: #fff;
     --borderUnderlines: rgba(0, 0, 0, 0.726);
@@ -12,7 +13,7 @@
     font-family: helvetica, arial, sans-serif;
     
 }
-
+/* I am going to for less is more, plain look. I think the white background with minimal colors makes it look less amatuer - though still very amatuer */
 body {
     background-color: white;
 }
@@ -51,7 +52,7 @@ nav a{
     text-decoration: none;
     padding: 10px 10px;
 }
-
+/*I wanted the links to look more responsive, so I added this in to make them react and have some character when hovered */
 .link-underline:hover{
     text-decoration: underline;
 }
@@ -67,7 +68,7 @@ h2{
 section img{
     justify-content: end;
     padding-top: 18px;
-    padding-left: 100px;
+    padding-left: 150px;
    
 }
 
@@ -75,9 +76,29 @@ section p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-top: 30px;
-    padding-left: 425px;
+    padding-top: 40px;
+    padding-left: 650px;
     text-align: center;
+}
+/* I didnt really want to have these titles. Though I think they were required and also they communicate that these are representative of project. I made them skewed just to show I knew how */
+h3{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    transform:skew(-0.6turn, 1deg);
+    margin: -50px;
+    padding: 5px;
+    top: 115px;
+    right: 275px;
+    background-image: url(./images/Wood.jpg);
+    color: var(--backgroundText);
+}
+
+/* adding the effect of removing to subtitle when hovered over the image. Keeps consistant with the coming soon appearing */
+figure:hover h3{
+    opacity: 0;
+    scale: 0;
+    transition: 0.5s;
 }
 
 address ul{
@@ -94,7 +115,7 @@ footer{
     color: var(--backgroundText);
 
 }
-
+/* tring to keep my selectors, classes and id's sperated. This is the section of classes */
 .row {
     display: flex;
     flex-direction: row;
@@ -116,7 +137,7 @@ footer{
     padding-left: 325px;
     padding-top: 25px;
 }
-
+/* as I dont have any projects yet, I wanted to add something a little more interesting to the projects section to indicate that in the coming weeks these will be populated with projects! */
 .imageProjectBox{
     display: flex;
     flex-wrap: wrap;
@@ -154,7 +175,7 @@ footer{
     opacity: 1;
     transform: scale(1);
 }
-
+/* because each image needed to be in its own flex-box to work, I had to create a class for every image and effect */
 .imageProject2{
     transition:0.5s;
     display: flex;
@@ -279,11 +300,27 @@ footer{
     opacity: 1;
     transform: scale(1);
 }
+/* because of the images difference in size I had to make an id to target this subtitle directly */
+#project1Title{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    transform:skew(-0.6turn, 1deg);
+    margin: -50px;
+    padding: 5px;
+    top: 210px;
+    right: 575px;
+    background-image: url(./images/Wood.jpg);
+}
 
+/* becuase the images in my projects are technically background images I cant get them to play by the rules and adapt to the screen changes. I cant get the images to for a line in a column */
 @media screen and (max-width: 768px) {
     main,
+    header,
+    footer,
     nav,
     section,
+    content,
     {
       flex-direction: column;
       justify-content: center;
@@ -292,5 +329,37 @@ footer{
     section p{
         padding-left:10px;
     }
-    
+    figure{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        transition: ease;
+        transform: scale(0.5);
+    }
+    .imageProject2{
+        order: 1;
+    }
   }
+  #project1Title{
+    right: 5px;
+    top: 5px;
+  }
+  h3{
+    right:5px;
+    top: 5px;
+  }
+
+  @media screen and (min-width: 992px) {
+    figure {
+      transform: scale(1);
+    }
+/* I had to add these position values back in here otherwise trying to make them responsive moved them out of place */
+    #project1Title{
+        top: 210px;
+        right: 575px;
+      }
+      h3{
+        top: 115px;
+    right: 275px;;
+      }
+}
