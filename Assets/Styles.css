@@ -106,14 +106,13 @@ section p {
     display: flex;
     flex-wrap: wrap;
     width: 1000px;
-    height:800px;
+    height:500px;
     margin:auto;
+    margin-top: 150px;
     border: solid black 3px;
 }
 
 .imageProject1{
-    width:800;
-    height:500;
     transition:0.5s;
     display: flex;
     justify-content: center;
@@ -128,9 +127,139 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color: #fff;
+    color:rgb(233, 20, 13);
+    font-weight: bolder;
 }
 
 .imageProject1:hover{
-    box-shadow: 0 0 0 500px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+}
+
+.imageProject1:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imageProject2{
+    transition:0.5s;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Cave.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 5px;
+}
+
+.imageProject2 p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color:rgb(233, 20, 13);
+    font-weight: bolder;
+}
+
+.imageProject2:hover{
+    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+}
+
+.imageProject2:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imageProject3{
+    transition:0.5s;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Lake.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 5px;
+}
+
+.imageProject3 p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color:rgb(233, 20, 13);
+    font-weight: bolder;
+}
+
+.imageProject3:hover{
+    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+}
+
+.imageProject3:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imageProject4{
+    transition:0.5s;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Lake.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 5px;
+}
+
+.imageProject4 p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color:rgb(233, 20, 13);
+    font-weight: bolder;
+}
+
+.imageProject4:hover{
+    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+}
+
+.imageProject4:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imageProject5{
+    transition:0.5s;
+    display: flex;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Lake.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 5px;
+}
+
+.imageProject5 p{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color:rgb(233, 20, 13);
+    font-weight: bolder;
+}
+
+.imageProject5:hover{
+    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+}
+
+.imageProject5:hover p{
+    opacity: 1;
+    transform: scale(1);
 }
