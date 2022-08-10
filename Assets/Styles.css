@@ -1,4 +1,10 @@
 :root {
+    --backgroundText: #fff;
+    --borderUnderlines: rgba(0, 0, 0, 0.726);
+    --comingSoon:rgb(233, 20, 13);
+    --shadows: rgb(0, 0, 0,0.9);
+    --projectBorder: solid black 2px;
+    
 
 }
 
@@ -28,7 +34,7 @@ header h1{
 nav {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid rgba(0, 0, 0, 0.726);
+    border-bottom: solid var(--borderUnderlines);
     background-image: url(./images/Wood.jpg);
     height: 100%;
     margin: 0 auto;
@@ -41,7 +47,7 @@ nav li{
 }
 
 nav a{
-    color: #fff;
+    color: var(--backgroundText);
     text-decoration: none;
     padding: 10px 10px;
 }
@@ -50,17 +56,12 @@ nav a{
     text-decoration: underline;
 }
 
-aside{
-    display: flex;
-    flex-direction: column;
-    float: left;
-    font-size: larger;
-    color:#fff;
-    background-image: url(./images/Wood.jpg);
-    border-right: solid rgba(0, 0, 0, 0.726);
-    border-width: 5px;
-    padding-left: 5px;
-    Padding-right: 5px;
+h2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2%;
+  width: auto;
+  border-bottom: solid var(--borderUnderlines) 2px;  
 }
 
 section img{
@@ -75,10 +76,24 @@ section p {
     flex-wrap: wrap;
     flex-direction: row;
     padding-top: 30px;
-    padding-left: 100px;
+    padding-left: 425px;
     text-align: center;
 }
 
+address ul{
+    list-style: none;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    background-image: url(./images/Wood.jpg);
+    justify-content: center;
+    height:100%;
+    margin: 0 auto;
+    color: var(--backgroundText);
+
+}
 
 .row {
     display: flex;
@@ -109,7 +124,7 @@ section p {
     height:500px;
     margin:auto;
     margin-top: 150px;
-    border: solid black 3px;
+    border: solid var(--borderUnderlines) 3px;
 }
 
 .imageProject1{
@@ -127,12 +142,12 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color:rgb(233, 20, 13);
+    color:var(--comingSoon);
     font-weight: bolder;
 }
 
 .imageProject1:hover{
-    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px var(--shadows) inset;
 }
 
 .imageProject1:hover p{
@@ -143,6 +158,7 @@ section p {
 .imageProject2{
     transition:0.5s;
     display: flex;
+    flex-wrap:wrap ;
     width: 400px;
     height: 300px;
     justify-content: center;
@@ -150,7 +166,7 @@ section p {
     background-image: url(./images/Cave.jpg);
     background-position: center;
     background-size: cover;
-    border: solid black 5px;
+    border: var(--projectBorder)
 }
 
 .imageProject2 p{
@@ -158,12 +174,12 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color:rgb(233, 20, 13);
+    color:var(--comingSoon);
     font-weight: bolder;
 }
 
 .imageProject2:hover{
-    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px var(--shadows) inset;
 }
 
 .imageProject2:hover p{
@@ -181,7 +197,7 @@ section p {
     background-image: url(./images/Lake.jpg);
     background-position: center;
     background-size: cover;
-    border: solid black 5px;
+    border: var(--projectBorder);
 }
 
 .imageProject3 p{
@@ -189,12 +205,12 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color:rgb(233, 20, 13);
+    color:var(--comingSoon);
     font-weight: bolder;
 }
 
 .imageProject3:hover{
-    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px var(--shadows) inset;
 }
 
 .imageProject3:hover p{
@@ -209,10 +225,10 @@ section p {
     height: 300px;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/Lake.jpg);
+    background-image: url(./images/Mountain.jpg);
     background-position: center;
     background-size: cover;
-    border: solid black 5px;
+    border: var(--projectBorder);
 }
 
 .imageProject4 p{
@@ -220,12 +236,12 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color:rgb(233, 20, 13);
+    color:var(--comingSoon);
     font-weight: bolder;
 }
 
 .imageProject4:hover{
-    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px var(--shadows) inset;
 }
 
 .imageProject4:hover p{
@@ -240,10 +256,10 @@ section p {
     height: 300px;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/Lake.jpg);
+    background-image: url(./images/forrestMountain.jfif);
     background-position: center;
     background-size: cover;
-    border: solid black 5px;
+    border: var(--projectBorder);
 }
 
 .imageProject5 p{
@@ -251,15 +267,30 @@ section p {
     transform: scale(0);
     transition: 0.8s;
     font-size: 2rem;
-    color:rgb(233, 20, 13);
+    color:var(--comingSoon);
     font-weight: bolder;
 }
 
 .imageProject5:hover{
-    box-shadow: 0 0 0 300px rgb(0, 0, 0,0.9) inset;
+    box-shadow: 0 0 0 300px var(--shadows) inset;
 }
 
 .imageProject5:hover p{
     opacity: 1;
     transform: scale(1);
 }
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    section,
+    {
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    section p{
+        padding-left:10px;
+    }
+    
+  }
