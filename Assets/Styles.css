@@ -24,7 +24,7 @@ header {
     background-image: url(./images/Wood.jpg);
     height:100%;
     margin: 0 auto;
-    color: #fff;
+    color: var(--backgroundText)
     font-size: 40px;
 }
 header h1{
@@ -77,7 +77,7 @@ section p {
     flex-wrap: wrap;
     flex-direction: row;
     padding-top: 40px;
-    padding-left: 650px;
+    padding-left: 550px;
     text-align: center;
 }
 /* I didnt really want to have these titles. Though I think they were required and also they communicate that these are representative of project. I made them skewed just to show I knew how */
