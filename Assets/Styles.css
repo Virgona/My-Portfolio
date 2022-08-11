@@ -24,7 +24,7 @@ header {
     background-image: url(./images/Wood.jpg);
     height:100%;
     margin: 0 auto;
-    color: var(--backgroundText)
+    color: var(--backgroundText);
     font-size: 40px;
 }
 header h1{
